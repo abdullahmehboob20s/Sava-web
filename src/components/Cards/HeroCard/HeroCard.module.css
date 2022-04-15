@@ -1,0 +1,42 @@
+.card {
+  flex: 1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 4px 8px 14px #02080a52;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #085a7e;
+  /* opacity: 0.4; */
+}
+
+.cardImg {
+  aspect-ratio: 1/1;
+}
+
+.cardTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.card:nth-child(1) .cardTitle img {
+  width: 70%;
+}
+.card:nth-child(2) .cardTitle img {
+  width: 55%;
+}
+.card:nth-child(3) .cardTitle img {
+  width: 65%;
+}

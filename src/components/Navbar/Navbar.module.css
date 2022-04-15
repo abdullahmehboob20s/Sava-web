@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 125px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links > :not(:last-child) {
+  margin-right: 60px;
+}
+
+.links > a:hover {
+  color: white;
+}
