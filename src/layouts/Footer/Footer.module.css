@@ -1,0 +1,32 @@
+.footer_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.icons_wrapper > :not(:last-child) {
+  margin-right: 40px;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+}
+
+.socialIcons > :not(:last-child) {
+  margin-right: 16px;
+}
+
+.links_wrpaper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #1f3d6d2d;
+  border-bottom: 2px solid #1f3d6d2d;
+  padding: 36px 0;
+}
