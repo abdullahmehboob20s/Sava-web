@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 40px;
+  background-color: #bae9ff;
+}
+
+.card.isOffer {
+  background-color: #d6f2ff;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating > :not(:last-child) {
+  margin-right: 12px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+}
+
+.stars > :not(:last-child) {
+  margin-right: 4px;
+}

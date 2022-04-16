@@ -1,0 +1,36 @@
+.hotelCard {
+  padding: 36px 50px;
+  position: relative;
+  z-index: 4;
+}
+
+.dividerLine {
+  border: 1px solid white;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating > :not(:last-child) {
+  margin-right: 16px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+}
+
+.stars > :not(:last-child) {
+  margin-right: 4px;
+}
+
+.flightDetails {
+  display: flex;
+  align-items: center;
+}
+
+.flightDetails > :not(:last-child) {
+  margin-right: 14px;
+}

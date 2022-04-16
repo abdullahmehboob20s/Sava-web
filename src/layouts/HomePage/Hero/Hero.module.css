@@ -11,10 +11,10 @@
   width: 100%;
   height: 100%;
 
-  background-image: url(../../../assets/images/hero-img.png);
+  /* background-image: url(../../../assets/images/hero-img.png);
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   z-index: -2;
 }
 .heroWrapper::after {
