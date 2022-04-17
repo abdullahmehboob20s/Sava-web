@@ -124,11 +124,14 @@ body {
   --fs-144px: 144px;
 
   --bg-blue: #70cbf4;
+  --bg-blue-light: #e2f3fe;
   --bg-red: #ff3841;
   --text-blue: #1f3d6d;
   --text-blue-light: #006ea3;
   --bg-btn-blue: #229ed9;
   --btn-blue: #229ed9;
+  --bg-gray: #dcdcdc;
+  --bg-gray-light: #f4f4f4;
 }
 
 /* COLORS */
@@ -163,6 +166,15 @@ body {
 
 .btn-blue {
   color: var(--btn-blue);
+}
+.bg-blue-light {
+  background-color: var(--bg-blue-light);
+}
+.bg-gray {
+  background-color: var(--bg-gray);
+}
+.bg-gray-light {
+  background-color: var(--bg-gray-light);
 }
 
 /* HEADING TAGS */
@@ -859,4 +871,22 @@ li {
   z-index: -1;
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
+}
+
+.bullet {
+  display: flex;
+  align-items: center;
+}
+
+.bullet::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: #1f3d6d;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.about-hotel-slider {
+  height: 100%;
 }

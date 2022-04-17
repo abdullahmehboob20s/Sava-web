@@ -1,0 +1,52 @@
+.content header {
+  display: flex;
+  align-items: center;
+}
+
+.content header > :not(:last-child) {
+  margin-right: 75px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+}
+
+.stars > :not(:last-child) {
+  margin-right: 4px;
+}
+
+.wifi {
+  display: flex;
+  align-items: center;
+}
+
+.wifi > :not(:last-child) {
+  margin-right: 14px;
+}
+
+.content footer {
+  display: flex;
+  align-items: center;
+}
+
+.content footer > :not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* roomsCont */
+.roomsCont header {
+  background-color: #dcdcdc;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.roomsCont header > div {
+  display: flex;
+  align-items: center;
+}
+.roomsCont header > div > :not(:last-child) {
+  margin-right: 18px;
+}
