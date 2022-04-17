@@ -1,0 +1,79 @@
+.details header {
+  display: flex;
+  position: relative;
+}
+
+.headerLeft {
+  flex: 1;
+  margin-right: 80px;
+}
+.headerRight {
+  flex: 1;
+}
+
+.headerRight > img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.details main {
+  border-top: 2px solid #dddddd;
+  padding-top: 2rem;
+}
+
+.tabButton {
+  display: flex;
+  align-items: center;
+  padding: 32px 10px;
+  border-bottom: 2px solid #dddddd;
+  width: 100%;
+}
+
+.tabButton > :not(:last-child) {
+  margin-right: 1rem;
+}
+
+.tabButtonIcon {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.details main {
+  display: flex;
+}
+
+.tabsWrapper {
+  flex: 1;
+  max-width: 417px;
+  margin-right: 50px;
+  position: relative;
+}
+
+.marker {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #e2f3fe;
+  transition: all 0.3s ease;
+  z-index: -1;
+  height: 0px;
+}
+
+.tabBody {
+  flex: 1;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+}
+
+.tabButton svg {
+  fill: var(--text-blue) !important;
+}
+.tabButton_active svg {
+  fill: var(--btn-blue) !important;
+}

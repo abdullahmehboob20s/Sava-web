@@ -1,0 +1,10 @@
+.bulletWrapper {
+  display: flex;
+}
+
+.bullet {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}

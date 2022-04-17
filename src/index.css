@@ -873,20 +873,6 @@ li {
   backdrop-filter: blur(10px);
 }
 
-.bullet {
-  display: flex;
-  align-items: center;
-}
-
-.bullet::before {
-  content: "";
-  width: 14px;
-  height: 14px;
-  background-color: #1f3d6d;
-  border-radius: 50%;
-  margin-right: 14px;
-}
-
 .about-hotel-slider {
   height: 100%;
 }
