@@ -1,0 +1,26 @@
+.contactInformation {
+  border: 1px solid #70cbf4;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.contactInformation > :not(:last-child) {
+  margin-right: 26px;
+}
+
+.form {
+  display: grid;
+  gap: 30px;
+  max-width: 823px;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info > :not(:last-child) {
+  margin-right: 5px;
+}

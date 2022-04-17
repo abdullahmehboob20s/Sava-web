@@ -1,0 +1,45 @@
+.progressbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 60px;
+  position: relative;
+}
+
+.progressbar::before,
+.progress {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 100%;
+  background-color: #dddddd;
+  z-index: -4;
+}
+.progress {
+  background-color: #70cbf4;
+  transition: all 0.3s ease;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.progressbar {
+  flex: 1;
+  margin-right: 150px;
+  margin-bottom: 1rem;
+}
+
+.reserve {
+  display: flex;
+  padding: 12px 16px;
+  border: 1px solid #70cbf4;
+}
+
+.reserve > :not(:last-child) {
+  margin-right: 30px;
+}

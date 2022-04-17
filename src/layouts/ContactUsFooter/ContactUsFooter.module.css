@@ -1,0 +1,13 @@
+.footer {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+}
+
+.footer > div {
+  display: flex;
+  align-items: center;
+}
+
+.footer > div > :not(:last-child) {
+  margin-right: 1rem;
+}

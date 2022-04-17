@@ -9,6 +9,7 @@ import Bullet from "components/Bullet/Bullet";
 import { ReactComponent as SportIcon } from "assets/images/sport.svg";
 import { ReactComponent as DinnerIcon } from "assets/images/dinner-icon.svg";
 import { ReactComponent as WindIcon } from "assets/images/wind-icon-2.svg";
+import ContactUsFooter from "layouts/ContactUsFooter/ContactUsFooter";
 
 function Details() {
   const markerRef = useRef(null);
@@ -290,17 +291,7 @@ function Details() {
         </div>
       </div>
 
-      <footer className={`${styles.footer}`}>
-        <div className="container-wrapper">
-          <span className="fs-32px black opacity-0_7 font-hel-medium">
-            Na kontaktoni ne:
-          </span>{" "}
-          <span className="fs-32px btn-blue opacity-0_7 font-hel-bold">
-            {" "}
-            +355692081903
-          </span>
-        </div>
-      </footer>
+      <ContactUsFooter />
     </div>
   );
 }
