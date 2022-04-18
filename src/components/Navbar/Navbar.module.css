@@ -2,7 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 125px;
+  height: 100px;
+}
+.logo {
+  width: 120px;
 }
 
 .links {
@@ -16,4 +19,101 @@
 
 .links > a:hover {
   color: white;
+}
+
+.sidebar_header {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .logo {
+    width: 100px;
+  }
+
+  .navbar {
+    height: 80px;
+  }
+
+  .links > :not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    z-index: 110;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    transform: translateX(300px);
+  }
+
+  .right.show {
+    transform: translateX(0px);
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .links > :not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 1rem;
+  }
+
+  .links > a:hover {
+    color: rgb(107, 107, 107);
+  }
+
+  .sidebar_header {
+    display: block;
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .close_btn {
+    cursor: pointer;
+    width: fit-content;
+    margin-bottom: 1rem;
+  }
+
+  .sidebar_logo {
+    width: 100px;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    display: flex;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    width: 80px;
+  }
+
+  .navbar {
+    height: 70px;
+  }
+
+  .hamburger {
+    font-size: 1.5rem;
+  }
 }

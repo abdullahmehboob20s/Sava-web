@@ -10,7 +10,7 @@ const HotelCard = ({ hotelName, price }) => {
     <div className={`${styles.hotelCard} relative overflow-hidden`}>
       <Glass bgColor="rgba(255, 255, 255, 0.2)" filter="blur(30px)" />
 
-      <h4 className={` fs-28px white font-hel-bold uppercase mb-20px`}>
+      <h4 className={`fs-28px white font-hel-bold uppercase mb-20px`}>
         {hotelName}
       </h4>
 

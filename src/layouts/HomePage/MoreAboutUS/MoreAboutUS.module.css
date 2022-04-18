@@ -14,7 +14,7 @@
   display: flex;
 }
 
-.aboutusImg {
+.imageGrid_left {
   height: 100%;
   object-fit: cover;
   background: url(../../../assets/images/aboutusImg.png);
@@ -51,9 +51,6 @@
   grid-template-columns: repeat(1, 1fr);
   background-color: white;
   padding: 1rem;
-
-  /* grid-column: 1/-1; */
-
   gap: 1rem;
 }
 
@@ -65,4 +62,34 @@
   padding: 1rem;
   background-color: white;
   padding-right: 0;
+}
+
+@media (max-width: 760px) {
+  .section {
+    background-color: white;
+    padding: 24px 30px;
+    padding-bottom: 10px;
+  }
+
+  .images_row {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .images > img:first-child {
+    padding: 10px;
+    padding-right: 0;
+  }
+
+  /* .imageGrid {
+    flex-direction: column-reverse;
+  } */
+
+  .imageGrid_left {
+    flex: 2;
+  }
+
+  .imageGrid_right {
+    flex: 0.4;
+  }
 }

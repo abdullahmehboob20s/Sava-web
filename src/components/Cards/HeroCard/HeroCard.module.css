@@ -40,3 +40,15 @@
 .card:nth-child(3) .cardTitle img {
   width: 65%;
 }
+
+@media (max-width: 1100px) {
+  .cardTitle {
+    height: 6vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cardTitle {
+    height: 10vw;
+  }
+}

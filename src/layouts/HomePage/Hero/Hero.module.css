@@ -11,10 +11,10 @@
   width: 100%;
   height: 100%;
 
-  /* background-image: url(../../../assets/images/hero-img.png);
+  background-image: url(../../../assets/images/hero-img.png);
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   z-index: -2;
 }
 .heroWrapper::after {
@@ -46,7 +46,7 @@
 }
 
 .left {
-  flex: 0.6;
+  max-width: 450px;
 }
 
 .right {
@@ -64,4 +64,36 @@
 
 .cards > :nth-child(2) {
   transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+  .left {
+    max-width: 350px;
+  }
+  .cards > :not(:last-child) {
+    margin-right: 18px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .upperSection {
+    display: flex;
+    align-items: unset;
+    flex-direction: column;
+  }
+
+  .upperSection > :not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
+
+  .left {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cards > :not(:last-child) {
+    margin-right: 3vw;
+  }
 }

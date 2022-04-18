@@ -876,3 +876,40 @@ li {
 .about-hotel-slider {
   height: 100%;
 }
+
+/* MEDIA QUEIRES */
+
+@media (max-width: 1200px) {
+  :root {
+    --fs-60px: 50px;
+    --fs-32px: 24px;
+    --fs-24px: 18px;
+    --fs-58px: 44px;
+    --fs-28px: 22px;
+  }
+}
+@media (max-width: 1000px) {
+  :root {
+    --fs-60px: 40px;
+    --fs-22px: 18px;
+    --fs-20px: 16px;
+    --fs-18px: 16px;
+    --fs-32px: 20px;
+    --fs-58px: 34px;
+    --fs-46px: 36px;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    --fs-60px: 30px;
+    --fs-32px: 16px;
+    --fs-58px: 28px;
+    --fs-28px: 18px;
+    --fs-24px: 16px;
+    --fs-46px: 24px;
+  }
+
+  .red-btn {
+    padding: 0.8rem 20px;
+  }
+}

@@ -2,10 +2,10 @@ import Glass from "components/Glass/Glass";
 import React from "react";
 import styles from "./Pill.module.css";
 
-function Pill({ offer, isOffer, style }) {
+function Pill({ offer, isOffer, style, fontSize = "16px" }) {
   return (
     <div
-      className={`${styles.pill} fs-16px font-hel-medium white w-fit-content`}
+      className={`${styles.pill} ${fontSize} font-hel-medium white w-fit-content`}
       style={style}
     >
       <Glass

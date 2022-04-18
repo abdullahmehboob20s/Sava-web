@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 function WeeklyOfferCard({ title, isOffer }) {
   return (
     <div className={`${styles.card} ${isOffer ? styles.isOffer : ""}`}>
-      <div>
+      <div className={`${styles.left}`}>
         <p className="text-blue fs-18px mb-5px uppercase font-hel-bold">
           {title}
         </p>

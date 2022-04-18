@@ -10,20 +10,53 @@
 
 .inputs {
   display: flex;
+  align-items: flex-end;
 }
 
 .inputs > :not(:last-child) {
   margin-right: 10px;
 }
 
-.formRight {
+/* .formRight {
   flex: 1;
   display: flex;
   align-items: flex-end;
-}
+} */
 
 .formBtn {
   min-width: 287.89px;
   padding: 15px 0;
   border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+  .inputs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .inputs > :not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .formBtn {
+    min-width: 100%;
+    padding: 12px 0;
+  }
+
+  .formSection {
+    padding: 26px 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .inputs {
+    gap: 0.8rem 0.6rem;
+  }
+
+  .formSection {
+    padding: 22px 20px;
+  }
 }

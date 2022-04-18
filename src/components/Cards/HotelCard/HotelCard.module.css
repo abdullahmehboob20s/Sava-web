@@ -2,6 +2,8 @@
   padding: 36px 50px;
   position: relative;
   z-index: 4;
+  max-width: 380px;
+  width: 100%;
 }
 
 .dividerLine {
@@ -29,8 +31,22 @@
 .flightDetails {
   display: flex;
   align-items: center;
+  text-align: left;
 }
 
 .flightDetails > :not(:last-child) {
   margin-right: 14px;
+}
+
+@media (max-width: 1000px) {
+  .hotelCard {
+    padding: 30px 40px;
+    max-width: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .hotelCard {
+    padding: 24px 28px;
+    max-width: 300px;
+  }
 }

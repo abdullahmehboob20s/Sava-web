@@ -9,13 +9,13 @@ function MoreAboutUS() {
   return (
     <div className={`${styles.wrapper} py-100px relative`}>
       <div className={`${styles.imageGrid}`}>
-        <div className={`${styles.aboutusImg}`}></div>
+        <div className={`${styles.imageGrid_left}`}></div>
         <div className={`${styles.imageGrid_right}`}></div>
       </div>
       <div className="container-wrapper">
         <div className={`${styles.sectionWrapper}`}>
           <div className={`${styles.section}`}>
-            <h1 className="text-blue-light font-hel-bold mb-10px">
+            <h1 className="text-blue-light font-hel-bold mb-10px fs-46px">
               MË SHUMË PËR TY
             </h1>
             <p className="black opacity-0_6 fs-18px">

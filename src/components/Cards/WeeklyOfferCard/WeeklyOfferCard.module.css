@@ -6,6 +6,10 @@
   background-color: #bae9ff;
 }
 
+.left {
+  margin-right: 1.6rem;
+}
+
 .card.isOffer {
   background-color: #d6f2ff;
 }
@@ -26,4 +30,26 @@
 
 .stars > :not(:last-child) {
   margin-right: 4px;
+}
+
+@media (max-width: 1200px) {
+  .card button {
+    max-width: 130px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .left {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .card button {
+    max-width: 100%;
+  }
 }
