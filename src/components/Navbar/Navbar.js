@@ -37,7 +37,10 @@ function Navbar() {
               <Link to="/" className="fs-20px black block font-hel-bold">
                 PUSHIME
               </Link>
-              <Link to="/" className="fs-20px black block font-hel-bold">
+              <Link
+                to="/about-hotel"
+                className="fs-20px black block font-hel-bold"
+              >
                 KROCIERE
               </Link>
               <Link to="/" className="fs-20px black block font-hel-bold">
