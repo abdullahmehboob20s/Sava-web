@@ -7,6 +7,7 @@ import TabPanel from "components/Tabs/TabPanel";
 import { useEffect, useRef, useState } from "react";
 import Details from "./components/Details/Details";
 import AboutHotel from "./components/AboutHotel/AboutHotel";
+import ResponsiveStyling from "hooks/ResponsiveStyling";
 
 function Data() {
   const markerRef = useRef(null);
@@ -27,7 +28,7 @@ function Data() {
   };
 
   return (
-    <div className="py-70px pb-0">
+    <div className={`${ResponsiveStyling("py-30px", "py-70px", "760px")} pb-0`}>
       <div className="container-wrapper">
         <div className="mb-40px">
           <h1 className="text-blue fs-50px font-hel-bold mb-5px">

@@ -17,3 +17,9 @@
   transition: all 0.2s ease;
   width: 0px;
 }
+
+@media (max-width: 760px) {
+  .tabButton {
+    padding: 20px 1rem;
+  }
+}

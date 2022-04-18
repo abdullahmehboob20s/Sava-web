@@ -31,7 +31,8 @@
 }
 
 .left {
-  width: 500px;
+  /* width: 500px; */
+  flex: 0.7;
   display: flex;
   margin-right: 34px;
 }
@@ -67,4 +68,86 @@
 
 .priceWrapper > button {
   padding: 20px 25px;
+}
+
+.title {
+  margin-right: 4rem;
+}
+
+@media (max-width: 1000px) {
+  .card > main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+
+  .tickWrapper {
+    width: 100px;
+    height: 80px;
+    padding-top: 1.2rem;
+    padding-right: 0.9rem;
+  }
+
+  .tickWrapper img {
+    width: 22px;
+  }
+
+  .card {
+    padding: 28px 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .priceWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 1rem;
+    gap: 1rem;
+  }
+
+  .priceWrapper > :nth-child(1) {
+    padding-left: 1.5rem;
+  }
+  .priceWrapper > :nth-child(2) {
+    padding-right: 1.5rem;
+    text-align: right;
+  }
+
+  .priceWrapper > button {
+    width: 100%;
+    padding: 20px 25px;
+    grid-column: 1/-1;
+  }
+
+  .listCont .list {
+    flex: 1;
+  }
+
+  .listCont > :not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 20px 20px;
+  }
+
+  .priceWrapper > button {
+    padding: 14px 16px;
+  }
 }

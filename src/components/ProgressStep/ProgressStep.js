@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ProgressStep.module.css";
 import TabButton from "components/Tabs/TabButton";
+import ResponsiveStyling from "hooks/ResponsiveStyling";
 
 const ProgressStep = ({ formStepNum, setformStepNum, title, index }) => {
   return (
@@ -20,7 +21,13 @@ const ProgressStep = ({ formStepNum, setformStepNum, title, index }) => {
         onClick={() => setformStepNum(index)}
         className={`${styles.progress_title} pointer`}
       >
-        <div className={`fs-22px black opacity-0_7 font-hel-medium`}>
+        <div
+          className={`${ResponsiveStyling(
+            "fs-14px",
+            "fs-22px",
+            "1200px"
+          )} black opacity-0_7 font-hel-medium`}
+        >
           {title}
         </div>
       </TabButton>

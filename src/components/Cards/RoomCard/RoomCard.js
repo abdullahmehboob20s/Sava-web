@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./RoomCard.module.css";
 import tick from "assets/images/tick.svg";
+import ResponsiveStyling from "hooks/ResponsiveStyling";
 
 function RoomCard({ img, isOnTop = false }) {
   return (
@@ -12,7 +13,7 @@ function RoomCard({ img, isOnTop = false }) {
       ) : (
         ""
       )}
-      <h1 className="text-blue fs-28px font-hel-bold mb-30px">
+      <h1 className={`${styles.title} text-blue fs-28px font-hel-bold mb-30px`}>
         Deluxe Room garden view
       </h1>
 
@@ -23,47 +24,164 @@ function RoomCard({ img, isOnTop = false }) {
         <div className={`${styles.right}`}>
           <div className={`${styles.listCont} mb-30px`}>
             <div className={`${styles.list}`}>
-              <p className="fs-20px black opacity-0_7 mb-10px">
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
                 {" "}
                 Pamje nga gjelbërimi
               </p>
-              <p className="fs-20px black opacity-0_7 mb-10px"> Dhomë 37 m2</p>
-              <p className="fs-20px black opacity-0_7 mb-10px">
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
+                {" "}
+                Dhomë 37 m2
+              </p>
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
                 {" "}
                 Në ndërtesë qendrore
               </p>
-              <p className="fs-20px black opacity-0_7 mb-10px"> WiFi (falas)</p>
-              <p className="fs-20px black opacity-0_7 mb-10px"> Kondicioner</p>
-              <p className="fs-20px black opacity-0_7 mb-10px">
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
+                {" "}
+                WiFi (falas)
+              </p>
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
+                {" "}
+                Kondicioner
+              </p>
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
                 {" "}
                 Pamje nga gjelbërimi
               </p>
-              <p className="fs-20px black opacity-0_7 mb-10px"> TV</p>
-              <p className="fs-20px black opacity-0_7 mb-10px"> Kasafortë</p>
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
+                {" "}
+                TV
+              </p>
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
+                {" "}
+                Kasafortë
+              </p>
             </div>
             <div className={`${styles.list}`}>
-              <p className="fs-20px black opacity-0_7 mb-10px"> Ballkon</p>
-              <p className="fs-20px black opacity-0_7 mb-10px">
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
+                {" "}
+                Ballkon
+              </p>
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
                 {" "}
                 Minibar (me pije freskuese, birrë, çokollata)
               </p>
-              <p className="fs-20px black opacity-0_7 mb-10px"> Garderobë</p>
-              <p className="fs-20px black opacity-0_7 mb-10px">
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
+                {" "}
+                Garderobë
+              </p>
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
                 Banjo me vaskë dhe dush
               </p>
-              <p className="fs-20px black opacity-0_7 mb-10px">
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
                 {" "}
                 Tharëse flokësh
               </p>
-              <p className="fs-20px black opacity-0_7 mb-10px">
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
                 {" "}
                 Peshqirë banjoje
               </p>
-              <p className="fs-20px black opacity-0_7 mb-10px">
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
                 {" "}
                 Produkte higjienike
               </p>
-              <p className="fs-20px black opacity-0_7 mb-10px">
+              <p
+                className={`${ResponsiveStyling(
+                  "fs-12px mb-5px",
+                  "fs-20px mb-10px",
+                  "600px"
+                )} black opacity-0_7`}
+              >
                 {" "}
                 Maks 2 të rritur + 2 fëmijë ose 3 të rritur
               </p>
@@ -71,7 +189,13 @@ function RoomCard({ img, isOnTop = false }) {
           </div>
 
           <div className={`${styles.priceWrapper}`}>
-            <p className="fs-16px black opacity-0_7 italic">
+            <p
+              className={`${ResponsiveStyling(
+                "fs-14px",
+                "fs-16px",
+                "450px"
+              )} black opacity-0_7 italic`}
+            >
               Çmimi fillestar: 3762€
             </p>
             <p className="text-blue fs-22px font-hel-bold">Totali 3011€</p>

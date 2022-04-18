@@ -5,49 +5,78 @@ import { AiOutlineWifi } from "react-icons/ai";
 import { IoBedOutline } from "react-icons/io5";
 import RoomCard from "components/Cards/RoomCard/RoomCard";
 import roomcardimg1 from "assets/images/room-card-img-1.png";
+import useMediaQuery from "hooks/useMediaQuery";
+import ResponsiveStyling from "hooks/ResponsiveStyling";
 
 function AboutHotel() {
+  const isBellow760px = useMediaQuery("(max-width : 760px)");
   return (
     <>
-      <div className="mb-80px">
+      <div className={`${ResponsiveStyling("mb-40px", "mb-80px", "550px")}`}>
         <div className="container-wrapper">
           <div className={`${styles.content}`}>
-            <header className="mb-45px">
+            <header
+              className={`${ResponsiveStyling("mb-30px", "mb-45px", "550px")}`}
+            >
               <div className={`${styles.stars}`}>
-                <FaStar size={30} color="#70CBF4" />
-                <FaStar size={30} color="#70CBF4" />
-                <FaStar size={30} color="#70CBF4" />
-                <FaStar size={30} color="#70CBF4" />
-                <FaStar size={30} color="#70CBF4" />
+                <FaStar size={isBellow760px ? 22 : 30} color="#70CBF4" />
+                <FaStar size={isBellow760px ? 22 : 30} color="#70CBF4" />
+                <FaStar size={isBellow760px ? 22 : 30} color="#70CBF4" />
+                <FaStar size={isBellow760px ? 22 : 30} color="#70CBF4" />
+                <FaStar size={isBellow760px ? 22 : 30} color="#70CBF4" />
               </div>
 
               <div className={`${styles.wifi}`}>
-                <AiOutlineWifi size={30} />
+                <AiOutlineWifi size={isBellow760px ? 22 : 30} />
                 <p className="fs-22px black opacity-0_7">Wifi</p>
               </div>
               <p className="fs-22px black opacity-0_7">Ultra All Inclusive</p>
             </header>
 
             <main className="mb-50px">
-              <p className="fs-22px black opacity-0_6 mb-30px weight-6 lh-1_4">
+              <p
+                className={`fs-22px ${ResponsiveStyling(
+                  "mb-20px",
+                  "mb-30px",
+                  "550px"
+                )} black opacity-0_6 weight-6 lh-1_4`}
+              >
                 Madhështia e hotelit ju jep shenjat e para të eksperiencës unike
                 që ky rezort ju ka rezervuar.
               </p>
 
-              <p className="fs-22px black opacity-0_6 mb-30px weight-6 lh-1_4">
+              <p
+                className={`fs-22px ${ResponsiveStyling(
+                  "mb-20px",
+                  "mb-30px",
+                  "550px"
+                )} black opacity-0_6 weight-6 lh-1_4`}
+              >
                 Me 6 restorante e 10 bare formula Ultra All Inclusive në Rixos
                 Premium Belek është diçka midis shkencës dhe artit. Dita nis me
                 një ekspres në verandën e hollit gjigand teksa perëndimi i
                 diellit të gjen me një koktej në dorë në Beach{" "}
               </p>
 
-              <p className="fs-22px black opacity-0_6 mb-30px weight-6 lh-1_4">
+              <p
+                className={`fs-22px ${ResponsiveStyling(
+                  "mb-20px",
+                  "mb-30px",
+                  "550px"
+                )} black opacity-0_6 weight-6 lh-1_4`}
+              >
                 Në çdo orë të ditës diçka emocionuese ndodh në Rixos Premium
                 Belek : pilates, volejboll në plazh, ju-jitsu, performanca me
                 DJ.
               </p>
 
-              <p className="fs-22px black opacity-0_6 mb-30px weight-6 lh-1_4">
+              <p
+                className={`fs-22px ${ResponsiveStyling(
+                  "mb-20px",
+                  "mb-30px",
+                  "550px"
+                )} black opacity-0_6 weight-6 lh-1_4`}
+              >
                 Rixy Club është I hapur deri natën vonë dhe me pishinat, lodrat
                 shumëngjyrëshe dhe spektaklet i tërheq fëmijët dhe prindërit si
                 me magnet.
@@ -77,7 +106,10 @@ function AboutHotel() {
         <div className={`container-wrapper ${styles.roomsCont}`}>
           <header className="mb-30px">
             <div>
-              <IoBedOutline size={45} className="text-blue" />
+              <IoBedOutline
+                size={isBellow760px ? 30 : 45}
+                className="text-blue"
+              />
               <h2 className="text-blue fs-28px uppercase font-hel-bold">
                 DHOMAT
               </h2>

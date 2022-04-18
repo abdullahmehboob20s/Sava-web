@@ -897,6 +897,7 @@ li {
     --fs-32px: 20px;
     --fs-58px: 34px;
     --fs-46px: 36px;
+    --fs-50px: 36px;
   }
 }
 @media (max-width: 600px) {
@@ -907,6 +908,8 @@ li {
     --fs-28px: 18px;
     --fs-24px: 16px;
     --fs-46px: 24px;
+    --fs-50px: 26px;
+    --fs-22px: 16px;
   }
 
   .red-btn {

@@ -74,3 +74,71 @@
 .whyWeLikeIt main {
   padding: 38px 51px;
 }
+
+@media (max-width: 1200px) {
+  .whyWeLikeIt main {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hotel_details_section {
+    flex-direction: column;
+  }
+
+  .slider_wrapper {
+    display: flex;
+    width: 100%;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+  .hotel_qualities {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .hotel_qualities > :not(:last-child) {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .hotel_qualities > div {
+    flex: 1;
+  }
+
+  .sliderImg {
+    aspect-ratio: 16/9;
+    height: auto;
+  }
+
+  .slider_arrowBtn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .whyWeLikeIt main {
+    padding: 16px 24px;
+  }
+
+  .whyWeLikeIt header {
+    padding: 0 18px;
+    height: 50px;
+  }
+
+  .whyWeLikeIt header > :not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .hotel_qualities {
+    flex-direction: column;
+  }
+
+  .hotel_qualities > :not(:last-child) {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,5 +1,6 @@
 import ProgressStep from "components/ProgressStep/ProgressStep";
 import TabButton from "components/Tabs/TabButton";
+import ResponsiveStyling from "hooks/ResponsiveStyling";
 import React, { useState } from "react";
 import styles from "./Header.module.css";
 
@@ -36,13 +37,25 @@ function Header() {
           </div>
           <div className={`${styles.reserve} bg-blue-light`}>
             <div>
-              <p className="text-blue fs-34px font-hel-bold mb-5px">3011 €</p>
+              <p
+                className={`text-blue font-hel-bold mb-5px  ${ResponsiveStyling(
+                  "fs-26px",
+                  "fs-34px",
+                  "1200px"
+                )}`}
+              >
+                3011 €
+              </p>
               <p className="black opacity-0_7 italic fs-16px">
                 Përfshirë dhe Uljen 751 €
               </p>
             </div>
             <TabButton
-              className={`red-btn white fs-28px font-hel-bold pointer uppercase`}
+              className={`red-btn white ${ResponsiveStyling(
+                "fs-16px",
+                "fs-28px",
+                "1200px"
+              )} font-hel-bold pointer uppercase`}
               tabIndex={2}
               onClick={() => setformStepNum(2)}
             >

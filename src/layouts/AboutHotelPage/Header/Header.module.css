@@ -43,3 +43,42 @@
 .reserve > :not(:last-child) {
   margin-right: 30px;
 }
+
+@media (max-width: 1200px) {
+  .reserve {
+    width: 300px !important;
+    justify-content: space-between;
+  }
+
+  .progressbar {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header > :not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  .reserve {
+    width: 100% !important;
+    max-width: 280px !important;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .progressbar {
+    width: 100%;
+  }
+
+  .reserve > :not(:last-child) {
+    margin-bottom: 1rem;
+    margin-right: 0px;
+  }
+}

@@ -55,3 +55,22 @@
   display: grid;
   gap: 32px;
 }
+
+@media (max-width: 760px) {
+  .content header > :not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}
+@media (max-width: 550px) {
+  .content header {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .content header > :not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .content header > :nth-child(2) {
+    order: -1;
+  }
+}

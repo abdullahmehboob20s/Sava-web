@@ -31,3 +31,15 @@
   transform: translateX(-50%);
   width: max-content;
 }
+
+@media (max-width: 500px) {
+  .circle {
+    min-width: 26px;
+    min-height: 26px;
+  }
+
+  .circle::before {
+    width: 10px;
+    height: 10px;
+  }
+}

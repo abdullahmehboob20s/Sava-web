@@ -8,10 +8,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+import useMediaQuery from "hooks/useMediaQuery";
+import ResponsiveStyling from "hooks/ResponsiveStyling";
 
 function Header() {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
+  const isBellow1000px = useMediaQuery("(max-width : 1000px)");
 
   return (
     <div className={`${styles.hotel_details_section}`}>
@@ -55,13 +58,17 @@ function Header() {
             </SwiperSlide>
           </Swiper>
           <button
-            className={`${styles.slider_arrowBtn} ${styles.left} pointer fs-34px`}
+            className={`${styles.slider_arrowBtn} ${
+              styles.left
+            } pointer ${ResponsiveStyling("fs-24px", "fs-34px", "1000px")}`}
             ref={navigationPrevRef}
           >
             <IoIosArrowBack color="black" />
           </button>
           <button
-            className={`${styles.slider_arrowBtn} ${styles.right} pointer fs-34px`}
+            className={`${styles.slider_arrowBtn} ${
+              styles.right
+            } pointer ${ResponsiveStyling("fs-24px", "fs-34px", "1000px")}`}
             ref={navigationNextRef}
           >
             <IoIosArrowForward color="black" />
@@ -70,34 +77,113 @@ function Header() {
       </div>
 
       <div className={`${styles.hotel_qualities}`}>
-        <div className={`${styles.whyWeLikeIt} mb-10px`}>
+        <div className={`${styles.whyWeLikeIt} mb-10px bg-blue-light`}>
           <header className="bg-blue">
-            <BsEye size={30} color="#1F3D6D" />
-            <p className="text-blue fs-22px font-hel-bold">Përse na pëlqen</p>
+            <BsEye size={isBellow1000px ? 26 : 30} color="#1F3D6D" />
+            <p
+              className={`${ResponsiveStyling(
+                "fs-16px",
+                "fs-22px",
+                "600px"
+              )} text-blue font-hel-bold`}
+            >
+              Përse na pëlqen
+            </p>
           </header>
 
-          <main className="bg-blue-light">
-            <div className="bullet fs-22px text-blue mb-10px">Beach Bar</div>
-            <div className="bullet fs-22px text-blue mb-10px">Pishinat</div>
-            <div className="bullet fs-22px text-blue mb-10px">Rixy Club</div>
-            <div className="bullet fs-22px text-blue mb-10px">
+          <main className="">
+            <div
+              className={`${ResponsiveStyling(
+                "fs-16px",
+                "fs-22px",
+                "600px"
+              )} bullet text-blue mb-10px`}
+            >
+              Beach Bar
+            </div>
+            <div
+              className={`${ResponsiveStyling(
+                "fs-16px",
+                "fs-22px",
+                "600px"
+              )} bullet text-blue mb-10px`}
+            >
+              Pishinat
+            </div>
+            <div
+              className={`${ResponsiveStyling(
+                "fs-16px",
+                "fs-22px",
+                "600px"
+              )} bullet text-blue mb-10px`}
+            >
+              Rixy Club
+            </div>
+            <div
+              className={`${ResponsiveStyling(
+                "fs-16px",
+                "fs-22px",
+                "600px"
+              )} bullet text-blue mb-10px`}
+            >
               4 Restorantet e reja
             </div>
-            <div className="bullet fs-22px text-blue mb-10px">Festat me DJ</div>
+            <div
+              className={`${ResponsiveStyling(
+                "fs-16px",
+                "fs-22px",
+                "600px"
+              )} bullet text-blue mb-10px`}
+            >
+              Festat me DJ
+            </div>
           </main>
         </div>
-        <div className={`${styles.whyWeLikeIt} `}>
+        <div className={`${styles.whyWeLikeIt} bg-gray-light `}>
           <header className="bg-gray">
-            <IoLocationOutline size={30} color="#1F3D6D" />
-            <p className="text-blue fs-22px font-hel-bold">Vendndodhja</p>
+            <IoLocationOutline
+              size={isBellow1000px ? 24 : 30}
+              color="#1F3D6D"
+            />
+            <p
+              className={`${ResponsiveStyling(
+                "fs-16px",
+                "fs-22px",
+                "600px"
+              )} text-blue font-hel-bold`}
+            >
+              Vendndodhja
+            </p>
           </header>
 
-          <main className="bg-gray-light">
-            <div className="bullet fs-22px text-blue mb-10px">Buzë detit</div>
-            <div className="bullet fs-22px text-blue mb-10px">
+          <main className="">
+            <div
+              className={`${ResponsiveStyling(
+                "fs-16px",
+                "fs-22px",
+                "600px"
+              )} bullet text-blue mb-10px`}
+            >
+              Buzë detit
+            </div>
+            <div
+              className={`${ResponsiveStyling(
+                "fs-16px",
+                "fs-22px",
+                "600px"
+              )} bullet text-blue mb-10px`}
+            >
               40 km nga aeroporti{" "}
             </div>
-            <div className="bullet fs-22px text-blue mb-10px">Në Belek</div>
+            <div
+              className={`${ResponsiveStyling(
+                "fs-16px",
+                "fs-22px",
+                "600px"
+              )} bullet text-blue mb-10px`}
+            >
+              Në Belek
+            </div>
           </main>
         </div>
       </div>
