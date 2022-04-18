@@ -11,3 +11,10 @@
 .footer > div > :not(:last-child) {
   margin-right: 1rem;
 }
+
+@media (max-width: 760px) {
+  .footer {
+    background-color: #f8f8f8;
+    padding: 30px 0;
+  }
+}

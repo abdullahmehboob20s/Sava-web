@@ -32,6 +32,7 @@
   flex: 1;
   margin-right: 150px;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .reserve {
@@ -73,12 +74,14 @@
     text-align: center;
   }
 
-  .progressbar {
-    width: 100%;
-  }
-
   .reserve > :not(:last-child) {
     margin-bottom: 1rem;
     margin-right: 0px;
+  }
+}
+
+@media (max-width: 760px) {
+  .header {
+    margin: 0 6vw;
   }
 }

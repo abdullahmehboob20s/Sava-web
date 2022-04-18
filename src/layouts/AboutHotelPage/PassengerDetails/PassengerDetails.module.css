@@ -24,3 +24,9 @@
 .info > :not(:last-child) {
   margin-right: 5px;
 }
+
+@media (max-width: 1000px) {
+  .form {
+    gap: 0.5rem;
+  }
+}

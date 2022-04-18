@@ -4,10 +4,11 @@ import { HiUser } from "react-icons/hi";
 import InputBox from "components/InputBox/InputBox";
 import { FaInfoCircle } from "react-icons/fa";
 import ContactUsFooter from "layouts/ContactUsFooter/ContactUsFooter";
+import ResponsiveStyling from "hooks/ResponsiveStyling";
 
 function PassengerDetails() {
   return (
-    <div className="py-70px pb-0">
+    <div className={`${ResponsiveStyling("py-30px", "py-70px", "600px")} pb-0`}>
       <div className="mb-60px">
         <div className="container-wrapper">
           <div className="mb-40px">
@@ -46,7 +47,11 @@ function PassengerDetails() {
 
             <button
               type="submit"
-              className="red-btn pointer w-full white fs-28px pointer font-hel-bold"
+              className={`${ResponsiveStyling(
+                "fs-22px",
+                "fs-28px",
+                "1000px"
+              )} red-btn pointer w-full white pointer font-hel-bold`}
             >
               REZERVO TANI
             </button>

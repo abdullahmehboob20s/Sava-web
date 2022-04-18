@@ -4,7 +4,15 @@
 
 .bullet {
   content: "";
-  width: 14px;
-  height: 14px;
+  min-width: 14px;
+  min-height: 14px;
   border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .bullet {
+    content: "";
+    min-width: 8px;
+    min-height: 8px;
+  }
 }

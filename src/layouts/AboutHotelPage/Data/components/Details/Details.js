@@ -10,6 +10,7 @@ import { ReactComponent as SportIcon } from "assets/images/sport.svg";
 import { ReactComponent as DinnerIcon } from "assets/images/dinner-icon.svg";
 import { ReactComponent as WindIcon } from "assets/images/wind-icon-2.svg";
 import ContactUsFooter from "layouts/ContactUsFooter/ContactUsFooter";
+import ResponsiveStyling from "hooks/ResponsiveStyling";
 
 function Details() {
   const markerRef = useRef(null);
@@ -31,7 +32,7 @@ function Details() {
 
   return (
     <div>
-      <div className="mb-80px">
+      <div className={ResponsiveStyling("mb-40px", "mb-80px", "760px")}>
         <div className="container-wrapper">
           <div className={`${styles.details}`}>
             <header className="mb-40px">

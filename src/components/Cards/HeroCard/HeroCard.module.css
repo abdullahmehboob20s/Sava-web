@@ -1,11 +1,12 @@
 .card {
-  flex: 1;
+  /* flex: 1; */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   position: relative;
   box-shadow: 4px 8px 14px #02080a52;
+  /* width: 220px !important; */
 }
 
 .card::before {
@@ -16,12 +17,13 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #085a7e;
+  /* background-color: #085a7e; */
   /* opacity: 0.4; */
 }
 
 .cardImg {
-  aspect-ratio: 1/1;
+  /* aspect-ratio: 1/1; */
+  aspect-ratio: 9/10;
 }
 
 .cardTitle {
@@ -29,6 +31,7 @@
   align-items: center;
   justify-content: center;
   height: 80px;
+  position: relative;
 }
 
 .card:nth-child(1) .cardTitle img {

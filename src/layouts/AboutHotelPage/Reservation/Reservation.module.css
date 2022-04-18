@@ -31,6 +31,10 @@
   margin-right: 25px;
 }
 
+.plane_status img {
+  width: 40px;
+}
+
 .container main {
   display: grid;
   grid-template-columns: 130px 1fr 130px;
@@ -62,4 +66,83 @@
   border-right: 2px solid var(--bg-blue);
   border-top: 2px solid var(--bg-blue);
   transform: translateY(-50%) rotate(45deg);
+}
+
+@media (max-width: 1200px) {
+  .container header {
+    padding-right: 26px;
+  }
+
+  .plane_status {
+    min-width: 190px;
+    padding: 16px 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .plane_status > :not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .plane_status img {
+    width: 30px;
+  }
+
+  .container main {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .left {
+    margin-right: 40px;
+  }
+
+  .container header {
+    justify-content: space-between;
+    flex-direction: column;
+    padding-right: 0;
+    padding-bottom: 1rem;
+    align-items: unset;
+  }
+
+  .plane_status img {
+    width: 24px;
+  }
+
+  .plane_status {
+    min-width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 1rem;
+  }
+
+  .plane_date {
+    text-align: left;
+    padding-left: 1.1rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .flight_details {
+    flex-direction: column;
+  }
+
+  .left {
+    margin-right: 0px;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container main {
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    gap: 20px;
+  }
+
+  .flight_details {
+    padding: 20px 20px;
+  }
 }

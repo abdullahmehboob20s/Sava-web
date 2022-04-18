@@ -8,7 +8,13 @@ function Header() {
   const [formStepNum, setformStepNum] = useState(0);
 
   return (
-    <div className="py-70px pb-0 mb-30px">
+    <div
+      className={`${ResponsiveStyling(
+        "py-50px",
+        "py-70px",
+        "500px"
+      )} pb-0 mb-30px`}
+    >
       <div className="container-wrapper">
         <header className={`${styles.header}`}>
           <div className={`${styles.progressbar}`}>
