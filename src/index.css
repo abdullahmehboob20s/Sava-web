@@ -926,7 +926,12 @@ li {
   .mb-50px {
     margin-bottom: 30px;
   }
+
+  .container-wrapper {
+    width: 90%;
+  }
 }
+
 @media (max-width: 600px) {
   :root {
     --fs-60px: 30px;
