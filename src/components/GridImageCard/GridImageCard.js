@@ -22,7 +22,12 @@ const GridImageCard = ({
     >
       <img src={bgImg} className={`${styles.gridItemImg}`} alt="" />
       <div className={`${styles.pill}`}>
-        <Pill offer={offer} isOffer={isOffer} fontSize={pillFontSize} />
+        <Pill
+          offer={offer}
+          isOffer={isOffer}
+          glassBg={isOffer ? "orange" : "rgba(255, 255, 255, 0.3)"}
+          fontSize={pillFontSize}
+        />
       </div>
       <p className="white font-hel-bold fs-32px">{title}</p>
     </div>

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./Header.module.css";
 import sliderImg1 from "assets/images/grid-img-4.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -10,17 +10,57 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import useMediaQuery from "hooks/useMediaQuery";
 import ResponsiveStyling from "hooks/ResponsiveStyling";
+import Pill from "components/Pill/Pill";
 
 function Header() {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
   const isBellow1000px = useMediaQuery("(max-width : 1000px)");
+  const [swiperData, setSwiperData] = useState("0");
+
+  const changeSlide = (e) => {
+    setSwiperData(e.activeIndex);
+  };
+
+  const images = [
+    { img: sliderImg1 },
+    { img: sliderImg1 },
+    { img: sliderImg1 },
+    { img: sliderImg1 },
+    { img: sliderImg1 },
+    { img: sliderImg1 },
+    { img: sliderImg1 },
+    { img: sliderImg1 },
+  ];
 
   return (
     <div className={`${styles.hotel_details_section}`}>
       <div className={`${styles.slider_wrapper}`}>
         <div className={`${styles.slider} relative`}>
+          <div className={`${styles.pill}`}>
+            <Pill glassBg="white" style={{ padding: "6px 20px" }}>
+              {/* <p className="black font-hel-medium fs-16px">
+                {swiperData < 10 && swiperData > 0
+                  ? `0${swiperData}`
+                  : swiperData}
+                /
+                {images.length < 10 && images.length > 0
+                  ? `0${images.length}`
+                  : `${swiperData}`}
+              </p> */}
+              <p
+                className={`black font-hel-medium ${ResponsiveStyling(
+                  "fs-12px",
+                  "fs-16px",
+                  "800px"
+                )}`}
+              >
+                {swiperData + 1} / {images.length}
+              </p>
+            </Pill>
+          </div>
           <Swiper
+            onSlideChange={changeSlide}
             modules={[Navigation]}
             slidesPerView={1}
             spaceBetween={20}
@@ -38,24 +78,15 @@ function Header() {
             }}
             className="about-hotel-slider"
           >
-            <SwiperSlide>
-              {/* <div className={`${styles.sliderImgContainer}`}> */}
-              <img
-                src={sliderImg1}
-                className={`${styles.sliderImg} w-full`}
-                alt=""
-              />
-              {/* </div> */}
-            </SwiperSlide>
-            <SwiperSlide>
-              {/* <div className={`${styles.sliderImgContainer}`}> */}
-              <img
-                src={sliderImg1}
-                className={`${styles.sliderImg} w-full`}
-                alt=""
-              />
-              {/* </div> */}
-            </SwiperSlide>
+            {images.map((data, index) => (
+              <SwiperSlide key={index}>
+                <img
+                  src={data.img}
+                  className={`${styles.sliderImg} w-full`}
+                  alt=""
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
           <button
             className={`${styles.slider_arrowBtn} ${

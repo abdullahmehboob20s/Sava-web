@@ -75,6 +75,13 @@
   padding: 38px 51px;
 }
 
+.pill {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 100;
+}
+
 @media (max-width: 1200px) {
   .whyWeLikeIt main {
     padding: 20px 30px;
@@ -140,5 +147,10 @@
   .hotel_qualities > :not(:last-child) {
     margin-right: 0rem;
     margin-bottom: 1rem;
+  }
+
+  .pill {
+    top: 12px;
+    right: 12px;
   }
 }

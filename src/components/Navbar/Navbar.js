@@ -43,7 +43,10 @@ function Navbar() {
               >
                 KROCIERE
               </Link>
-              <Link to="/" className="fs-20px black block font-hel-bold">
+              <Link
+                to="/package-details"
+                className="fs-20px black block font-hel-bold"
+              >
                 DESTINACIONE
               </Link>
             </div>

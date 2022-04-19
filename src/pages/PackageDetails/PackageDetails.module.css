@@ -1,0 +1,100 @@
+.content header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left > :not(:last-child) {
+  margin-right: 20px;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+}
+
+.headerTitle > :not(:last-child) {
+  margin-right: 1.4rem;
+}
+
+.paginations {
+  display: flex;
+  align-items: center;
+}
+
+.paginations > :not(:last-child) {
+  margin-right: 1rem;
+}
+
+.paginations > button {
+  width: 42px;
+  height: 42px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.paginations > button.active {
+  background: #70cbf4 0% 0% no-repeat padding-box;
+  border: 1px solid #2184bc;
+  color: white !important;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right > :not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.menu {
+  min-width: 250px;
+}
+
+@media (max-width: 1000px) {
+  .content header {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .left {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu {
+    min-width: 100%;
+  }
+
+  .paginations > :not(:last-child) {
+    margin-right: 0.6rem;
+  }
+
+  .left {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .left > :not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 1rem;
+  }
+
+  .right {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .right > :not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
